@@ -63,7 +63,7 @@ font-family: monospace;
     justify-content: center;
     background-image: linear-gradient(to top right, rgb(114, 213, 249), rgb(239, 120, 211));
     padding: 30px;
-    height: 100vh;
+    height: auto;
   }
   .container1{
     display: flex;
