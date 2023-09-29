@@ -18,7 +18,7 @@ function LogIn() {
 
         <label className="forgot-pass" htmlFor="forgot-pass">Forgot Password?</label><br />
 
-        <button className="login-button" onClick={()=>navigate("/home")}>LOGIN</button><br />
+        <button className="login-button" onClick={()=>navigate("/home")}>LOGIN</button><br /><br/>
 
         <h5 className="center-same">Or Sign up Using</h5>
         <div className="icons">
@@ -26,7 +26,7 @@ function LogIn() {
           <i className="fa-brands fa-twitter"></i>
           <i className="fa-brands fa-google-plus"></i>
         </div>
-        <br />
+        <br /><br/>
 
         <h5 className="center-same">Or Sign Up Using</h5>
         <h6 className="center-same" >SIGN UP</h6>
