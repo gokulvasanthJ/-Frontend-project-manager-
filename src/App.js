@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from "./Components/NavBar";
+// import SideBar from "./Components/SideBar";
+import Home from "./Components/Home";
+import Dashboard from "./Components/Dashboard";
+import AddProject from "./Components/AddProject";
+import LogIn from "./Components/LogIn";
+import EditProjects from "./Components/EditProjects";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { useState } from "react";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  let [data,setData]=useState([
+    {
+      title:"project",
+      URL:"projectUrl;",
+      description:"The project is"
+  }
+])
+  return <>
+
+    {/* <NavBar/> */}
+    <BrowserRouter>
+    <div className="sidebar-wrapper">
+    <NavBar />
     </div>
-  );
+      <div>
+        <Routes>
+           
+            <Route path="/home" element={<Home />} />
+            <Route path="/dashboard" element={<Dashboard data={data} setData={setData}/>} />
+            <Route path="/login" element={<LogIn />} />
+            <Route path="/addproject" element={<AddProject data={data} setData={setData}/>} />
+            <Route path="/editprojects" element={<EditProjects/>}/>
+            <Route path="*" element= {<Navigate to="login"/>} />
+
+            {/* <Route path="/deleteprojects" element={<DeleteProjects/>}/> */}
+
+
+          
+        </Routes>
+      </div>
+    </BrowserRouter>
+
+
+
+  </>
 }
 
 export default App;
