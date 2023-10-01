@@ -1,5 +1,14 @@
 /* addproject */
 @media (min-width: 992px) {
+
+  .add-project-page{
+      display: flex;
+  }
+  .add-project-page img{
+    width: 100%;
+    height:auto;
+    margin-left: 30px;
+  }
 .form-element {
     display: flex;
     justify-content: center;
@@ -9,20 +18,19 @@
 }
 .form-element1{
     border: 1px solid rgb(32, 31, 31);
-    width: 40%;
+    width: 50%;
     height: 70vh;
     padding: 30px;
     margin-top: 80px;
     border-radius: 10px;
-    background-color: transparent;
+    background-color: rgb(239, 247, 247);
 
 
 }
 .add-project{
-    width: 100%;
-    height: 92vh;
-    background-color: whitesmoke;
-    background-image: url("https://img.freepik.com/free-vector/white-background-with-wavy-line_361591-1216.jpg?size=626&ext=jpg");
+    width: 70%;
+    height:auto;
+    background-color: rgb(239, 247, 247);
 }
 
 .headings{
@@ -134,7 +142,7 @@ font-family: monospace;
   .banner-left{
     flex-basis:50%;  
     font-family: sans-serif;
-    margin-top: 150px;
+    margin-top: 120px;
     text-align: start;
   }
   .banner-left  button{
@@ -167,7 +175,7 @@ font-family: monospace;
     margin-left: 100px;
     width:100%;
     height:100%;
-    margin-top: 45px;
+    margin-top: 65px;
     }
     .contact-info {
       font-size: 16px;

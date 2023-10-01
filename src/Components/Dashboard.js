@@ -11,6 +11,7 @@ function Dashboard({data,setData}) {
   //    setData(newArray)
   // }
   let navigate=useNavigate()
+  const navigation=useNavigate()
   
 
   return <>
@@ -40,6 +41,7 @@ function Dashboard({data,setData}) {
      newArray.splice(i,1)
      setData(newArray)
   }}>Delete</Button></td>
+  <td><Button variant="primary" onClick={()=>navigation("/addProject")}>Add</Button></td>
           </tr>
         })}
                 

@@ -19,7 +19,13 @@ let handleSubmit=()=>{
           navigate("/dashboard")
 }
    
-  return <div className='add-project'>
+  return <>
+  <div className="add-project-page">
+  <div className="picture-add-page">
+<img src="https://img.freepik.com/free-vector/teamwork-concept-with-business-presentation_23-2147857539.jpg?w=740&t=st=1696184507~exp=1696185107~hmac=55d97d9a659f435e871c5ff31c7f2e9dce8b1eec14d3ca01c2217c42699813f6" alt="image"></img>
+  </div>
+  {/* ------------------------------ */}
+  <div className='add-project'>
   <div className="form-element">
    <Form className='form-element1' >
       <Form.Group className="mb-3" >
@@ -38,6 +44,9 @@ let handleSubmit=()=>{
     </Form>
   </div>
   </div>
+  </div>
+  
+  </>
 }
 
 export default Manage
