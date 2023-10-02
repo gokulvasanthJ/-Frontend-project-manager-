@@ -12,9 +12,9 @@ import { useState } from "react";
 function App() {
   let [data,setData]=useState([
     {
-      title:"project",
-      URL:"projectUrl;",
-      description:"The project is"
+      title:"Money Manager",
+      URL:"https://lovely-lokum-e7158a.netlify.app/;",
+      description:"Track Your Expenses and Calculate The Expenses in the Month End. This Helps for Your future saving 🤞🏻..."
   }
 ])
   return <>

@@ -29,7 +29,7 @@ function Dashboard({data,setData}) {
       </thead>
       <tbody>
         {data.map((e,i)=>{
-          return <tr key={i}>
+          return <tr key={i}zz>
           <td>{i+1}</td>
           <td>{e.title}</td>
           <td>{e.URL}</td>
