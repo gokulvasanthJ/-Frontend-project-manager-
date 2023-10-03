@@ -43,6 +43,7 @@ font-weight: 500;
 .class-table{
     padding:100px 30px 0 30px;
 }
+
 .Logo{
   display: flex;
 margin-left: -130px;
@@ -192,5 +193,9 @@ font-family: monospace;
     }
   }
 
-/* for form */
+/* for edit form */
+.edit-form{
+ display: flex;
+ justify-content: center;
+}
 
