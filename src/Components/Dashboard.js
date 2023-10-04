@@ -36,7 +36,7 @@ const handleEdit = ({ title, URL, description, id }) => {
   
 
   const handleAdd = () => {
-    navigation("/addProject")
+    navigation("/addproject")
   }
 // const handleEdit=({id,title,URL,description})=>{
 //   localStorage.setItem("id",id)
@@ -82,7 +82,7 @@ const handleEdit = ({ title, URL, description, id }) => {
                     &nbsp; &nbsp;
                     <Button variant='danger' onClick={() => handleDelete(e.id)}>Delete</Button>
                     &nbsp; &nbsp;
-                    <Button variant="primary" onClick={() => handleAdd}>Add</Button>
+                    <Button variant="primary" onClick={handleAdd}>Add</Button>
                   </td>
                 </tr>
               );
