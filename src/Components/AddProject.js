@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {  useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useNavigate } from 'react-router-dom';
@@ -12,11 +12,14 @@ function AddProject() {
   const [description, setDescription] = useState('');
 
   const handleSubmit = async () => {
+   console.log(API_URL)
     await axios.post(API_URL,{
       title,URL,description
-    });
+    })
 navigate("/dashboard")
   };
+
+  
 
 
   return (
