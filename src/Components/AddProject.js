@@ -12,7 +12,6 @@ function AddProject() {
   const [description, setDescription] = useState('');
 
   const handleSubmit = async () => {
-   console.log(API_URL)
     await axios.post(API_URL,{
       title,URL,description
     })

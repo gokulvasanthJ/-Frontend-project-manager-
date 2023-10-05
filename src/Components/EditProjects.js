@@ -34,7 +34,8 @@ function EditProjects() {
 
   return <>
 
-    <div className="edit-form"><Form className="form-element1">
+    <div className="edit-form">
+      <Form className="form-element1">
       <Form.Group className="mb-3">
         <Form.Label className="headings">Title</Form.Label>
         <Form.Control type="text" placeholder="Project Title" value={title} required onChange={(e) => setTitle(e.target.value)} />
@@ -51,7 +52,8 @@ function EditProjects() {
         Max 30 words
       </Form.Group>
       <Button variant="primary" onClick={handleEdit}>Submit</Button>
-    </Form></div>
+    </Form>
+    </div>
 
   </>
 }
