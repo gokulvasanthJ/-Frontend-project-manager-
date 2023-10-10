@@ -26,7 +26,6 @@ function App() {
             <Route path="/addproject" element={<AddProject/>} />
             {/* <Route path="/editproject" element={<EditProjects data={data} setData={setData} />}/> */}
             <Route path="/editprojects" element={<EditProjects/>} />
-
             <Route path="*" element= {<Navigate to="login"/>} />
 
             {/* <Route path="/deleteprojects" element={<DeleteProjects/>}/> */}
