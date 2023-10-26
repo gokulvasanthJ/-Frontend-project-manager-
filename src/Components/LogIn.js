@@ -5,34 +5,39 @@ function LogIn() {
   let navigate=useNavigate()
  
   return <>
-    <div className="screen">
-      <div className="container1">
-      <div className="container2">
-        <h1>Login</h1>
+  
+<body>
+    <section>
+        <div className="form-box">
+            <div className="form-value">
+                
+                    <h2>Login</h2>
+                    <div className="input-box">
+                        <span className="icon"><i className="fa-regular fa-envelope"></i></span>
+                        <input type="email" required />
+                        <label for="email">Email</label>
+                    </div>
+                    <div className="input-box">
+                        <span className="icon"><i className="fa-solid fa-lock"></i></span>
+                        <input type="password" required />
+                        <label for="password">Password</label>
+                    </div>
+                    <div className="remember-forgot">
+                        <label for=""><input type="checkbox" />Remember Me</label>
+                        <a href="#">Forget Password</a>
+                    </div>
+                    <button className="login-button" onClick={()=>navigate("/home")}>LOGIN</button>
+                    <div className="login-register">
+                        <p>Don't have a account <a href="registerindex1.html">Register</a></p>
 
-        <label htmlFor="input-box">Username</label>
-        <input className="input-box" type="text" placeholder="Type Your Username" /><br />
-
-        <label htmlFor="pass-box">Password</label>
-        <input className="input-box" type="password" placeholder="Type Your Password" /><br />
-
-        <label className="forgot-pass" htmlFor="forgot-pass">Forgot Password?</label><br />
-
-        <button className="login-button" onClick={()=>navigate("/home")}>LOGIN</button><br /><br/>
-
-        <h5 className="center-same">Or Sign up Using</h5>
-        <div className="icons">
-          <i className="fa-brands fa-facebook"></i>
-          <i className="fa-brands fa-twitter"></i>
-          <i className="fa-brands fa-google-plus"></i>
+                    </div>
+            </div>
         </div>
-        <br /><br/>
+    </section>
 
-        <h5 className="center-same">Or Sign Up Using</h5>
-        <h6 className="center-same" >SIGN UP</h6>
-      </div>
-      </div>
-    </div>
+</body>
+
+
   </>
 }
 
