@@ -24,7 +24,7 @@ function LogIn() {
                     </div>
                     <div className="remember-forgot">
                         <label for=""><input type="checkbox" />Remember Me</label>
-                        <a href="#">Forget Password</a>
+                        <a href="javascriptVoid">Forget Password</a>
                     </div>
                     <button className="login-button" onClick={()=>navigate("/home")}>LOGIN</button>
                     <div className="login-register">
