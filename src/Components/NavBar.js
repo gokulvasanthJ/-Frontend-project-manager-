@@ -16,7 +16,6 @@ function NavBar() {
                     <Nav.Link onClick={() => navigate("/home")} href="#home">Home</Nav.Link>
                     <Nav.Link onClick={() => navigate("/dashboard")} href="#Dashboard">Dashboard</Nav.Link>
                     <Nav.Link onClick={() => navigate("/addproject")} href="#AddProject">AddProject</Nav.Link>
-                    <Nav.Link onClick={() => navigate("/login")} href="#LogIn">LogIn</Nav.Link>
                 </Nav>
             </Container>
         </Navbar>
