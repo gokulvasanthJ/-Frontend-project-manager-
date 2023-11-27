@@ -65,6 +65,11 @@ font-family: monospace;
   justify-content: center;
 }
 
+/* For Loading */
+.loading{display: flex;
+justify-content: center;
+margin-top: 20%;
+}
 
 /* For Login
 .screen {
