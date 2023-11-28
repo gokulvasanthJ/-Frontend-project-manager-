@@ -15,12 +15,17 @@ function EditProjects() {
   const [description, setDescription] = useState('');
 
   const handleEdit = async () => {
-    await axios.put(`${API_URL}/${id}`, {
-      title,
-      URL,
-      description
-    })
-    navigate("/dashboard")
+    try {
+      await axios.put(`${API_URL}/${id}`, {
+        title,
+        URL,
+        description
+      });
+      navigate("/dashboard");
+      window.alert('Changes successfully updated!'); // Show alert
+    } catch (error) {
+      console.error('Error updating data:', error);
+    }
   }
 
   useEffect(() => {

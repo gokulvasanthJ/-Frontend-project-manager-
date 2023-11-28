@@ -3,7 +3,8 @@ import NavBar from "./Components/NavBar";
 import Home from "./Components/Home";
 import Dashboard from "./Components/Dashboard";
 import AddProject from "./Components/AddProject";
-// import LogIn from "./Components/LogIn";
+import LogIn from "./Components/LogIn";
+import SignUp from "./Components/SignUp";
 import EditProjects from "./Components/EditProjects";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useState, useEffect } from "react";
@@ -40,13 +41,14 @@ function App() {
             </div>
             <div>
               <Routes>
-                <Route path="/*" element={<Home />} />
+                <Route path="/home" element={<Home />} />
                 <Route path="/dashboard" element={<Dashboard />} />
-                {/* <Route path="/login" element={<LogIn />} /> */}
+                <Route path="/login" element={<LogIn />} />
+                <Route path="/signup" element={<SignUp />} />
                 <Route path="/addproject" element={<AddProject />} />
                 {/* <Route path="/editproject" element={<EditProjects data={data} setData={setData} />}/> */}
                 <Route path="/editprojects" element={<EditProjects />} />
-                {/* <Route path="*" element= {<Navigate to="login"/>} /> */}
+                <Route path="*" element= {<Navigate to="login"/>} />
                 {/* <Route path="/deleteprojects" element={<DeleteProjects/>}/> */}
               </Routes>
             </div>

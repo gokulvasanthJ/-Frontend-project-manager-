@@ -25,13 +25,19 @@ const handleEdit = ({ title, URL, description, id }) => {
 
 
   const handleDelete = async (id) => {
-  try
-  { await axios.delete(`${API_URL}/${id}`);
-    callApi();}
-    catch (error) {
-      console.error('Error deleting data:', error);
+    const confirmed = window.confirm('Are you sure you want to delete this project?');
+
+    if (confirmed) {
+      try {
+        await axios.delete(`${API_URL}/${id}`);
+        callApi();
+      } catch (error) {
+        console.error('Error deleting data:', error);
+      }
     }
   };
+
+  
 
   
 
