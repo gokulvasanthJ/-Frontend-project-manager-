@@ -1,5 +1,5 @@
 /* addproject */
-@media (min-width: 992px) {
+@media (min-width: 62px) {
 
   .add-project-page{
       display: flex;
@@ -158,7 +158,7 @@ section{
 .form-box{
 position: relative;
 width:400px;
-height: 490px;
+height: 530px;
 background-color: transparent(177, 222, 244);
 border: 1.5px solid rgb(236, 241, 245);
 border-radius: 20px;
@@ -296,7 +296,7 @@ text-shadow: 2px 2px 20px rgb(253, 252, 252);
 }
 .login-register a{
   font-weight: 400;
-  font-size: 15px;
+  font-size: 17px;
 }
   
 
@@ -308,7 +308,7 @@ text-shadow: 2px 2px 20px rgb(253, 252, 252);
   .banner-left{
     flex-basis:50%;  
     font-family: sans-serif;
-    margin-top: 120px;
+    margin-top: 70px;
     text-align: start;
   }
   .banner-left  button{
@@ -384,4 +384,14 @@ text-shadow: 2px 2px 20px rgb(253, 252, 252);
   background-color: rgb(90, 133, 169);
   box-shadow: 0px 0px 80px rgb(239, 240, 241) ;
 }
+
+.logout-link{
+  text-decoration: none;
+  color: rgb(164, 162, 162);
+  font-weight: 600;
+  font-size: 17px;
+}
+
+
+
 

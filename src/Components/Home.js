@@ -5,6 +5,7 @@ function Home() {
   let navigate=useNavigate()
 
 
+
   return <>
     <div className='container'>
       <div className='banner-wrapper'>
@@ -25,6 +26,7 @@ function Home() {
       <div className="contact2"><i class="fa-solid fa-envelope" style={{color:"#326bcd;"}}></i>&nbsp;<p className="contact-info">gokul27mech@gmail.com</p></div>
 
     </div>
+    
     </>
 }
 
