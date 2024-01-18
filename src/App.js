@@ -9,6 +9,7 @@ import EditProjects from "./Components/EditProjects";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { RiseLoader} from "react-spinners";
+import PrivateRoutes from "./Pri-Route/PrivateRoutes";
 
 function App() {
   console.log(process.env.REACT_APP_API_URL)
@@ -43,15 +44,19 @@ function App() {
             </div>
             <div>
               <Routes>
+              <Route element={<PrivateRoutes />}>
                 <Route path="/home" element={<Home />} />
                 <Route path="/dashboard" element={<Dashboard />} />
-                <Route path="/login" element={<LogIn />} />
                 <Route path="/signup" element={<SignUp />} />
                 <Route path="/addproject" element={<AddProject />} />
                 {/* <Route path="/editproject" element={<EditProjects data={data} setData={setData} />}/> */}
                 <Route path="/editprojects" element={<EditProjects />} />
                 <Route path="*" element= {<Navigate to="login"/>} />
                 {/* <Route path="/deleteprojects" element={<DeleteProjects/>}/> */}
+                </Route>
+                <Route path="/login" element={<LogIn />} />
+
+                
               </Routes>
             </div>
           </BrowserRouter>
