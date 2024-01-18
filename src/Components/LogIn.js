@@ -37,7 +37,7 @@ function LogIn() {
         <div className="form-box">
             <div className="form-value">
                 
-                    <h2>Login</h2>
+                    <h2>Logins</h2>
                     <div className="input-box">
                         <span className="icon"><i className="fa-regular fa-envelope"></i></span>
                         <input type="email" name='email'  />

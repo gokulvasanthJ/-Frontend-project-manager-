@@ -1,21 +1,13 @@
-import { Outlet, Navigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { Outlet, Navigate } from 'react-router-dom'
 
 const PrivateRoutes = () => {
-  let auth = { token: false };
+  const isAuthenticated = () => {
+    // Replace this with your actual authentication logic (e.g., checking for a token)
+    return sessionStorage.getItem('token') !== null;
+  };
+    return(
+      isAuthenticated() ? <Outlet/>:<Navigate to="/login"/>
+    )
+}
 
-  if (!auth.token) {
-    // Notify user with a toast message
-    toast.error('You need to log in to access this page', {
-      autoClose: 5000, // Close the toast after 5 seconds
-    });
-
-    // Redirect to login page
-    return <Navigate to="/login" />;
-  }
-
-  return <Outlet />;
-};
-
-export default PrivateRoutes;
+export default PrivateRoutes

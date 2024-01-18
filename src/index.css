@@ -17,13 +17,14 @@
 
 }
 .form-element1{
-    border: 1px solid rgb(32, 31, 31);
+    border: 1px solid rgb(239, 247, 247);;
     width: 50%;
     height: 70vh;
     padding: 30px;
     margin-top: 80px;
     border-radius: 10px;
-    background-color: rgb(239, 247, 247);
+    background-color:#070707;
+    color: aliceblue;
 
 
 }

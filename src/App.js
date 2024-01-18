@@ -44,20 +44,16 @@ function App() {
             </div>
             <div>
               <Routes>
-              <Route element={<PrivateRoutes />}>
+                <Route element={<PrivateRoutes />}>
                 <Route path="/home" element={<Home />} />
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/addproject" element={<AddProject />} />
-                {/* <Route path="/editproject" element={<EditProjects data={data} setData={setData} />}/> */}
                 <Route path="/editprojects" element={<EditProjects />} />
                 <Route path="*" element= {<Navigate to="login"/>} />
-                {/* <Route path="/deleteprojects" element={<DeleteProjects/>}/> */}
+
                 </Route>
                 <Route path="/login" element={<LogIn />} />
                 <Route path="/signup" element={<SignUp />} />
-
-
-                
               </Routes>
             </div>
           </BrowserRouter>
