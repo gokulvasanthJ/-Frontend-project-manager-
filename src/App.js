@@ -47,7 +47,6 @@ function App() {
               <Route element={<PrivateRoutes />}>
                 <Route path="/home" element={<Home />} />
                 <Route path="/dashboard" element={<Dashboard />} />
-                <Route path="/signup" element={<SignUp />} />
                 <Route path="/addproject" element={<AddProject />} />
                 {/* <Route path="/editproject" element={<EditProjects data={data} setData={setData} />}/> */}
                 <Route path="/editprojects" element={<EditProjects />} />
@@ -55,6 +54,8 @@ function App() {
                 {/* <Route path="/deleteprojects" element={<DeleteProjects/>}/> */}
                 </Route>
                 <Route path="/login" element={<LogIn />} />
+                <Route path="/signup" element={<SignUp />} />
+
 
                 
               </Routes>
