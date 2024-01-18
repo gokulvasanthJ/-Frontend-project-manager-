@@ -8,7 +8,7 @@ const PrivateRoutes = () => {
   if (!auth.token) {
     // Notify user with a toast message
     toast.error('You need to log in to access this page', {
-      autoClose: 5000, // Close the toast after 3 seconds
+      autoClose: 5000, // Close the toast after 5 seconds
     });
 
     // Redirect to login page
