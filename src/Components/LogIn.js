@@ -97,7 +97,7 @@ export default LogIn
   //   }
 
 
-// try {
+// try {                                     
 //   let res=await axios.post(`${process.env.REACT_APP_API_URL}user/signin`,data)
 //   if(res.status===200){
 //     toast.success(res.data.message)
@@ -141,3 +141,79 @@ export default LogIn
 
 // export default LogIn;
 
+
+
+// // LogIn.js
+
+// import React from 'react';
+// import { useNavigate } from 'react-router-dom';
+// import axios from 'axios';
+// import { toast } from 'react-toastify';
+
+// function LogIn() {
+//   let navigate = useNavigate();
+
+//   let handleSignin = async (e) => {
+//     e.preventDefault();
+//     let data = {
+//       email: e.target.email.value,
+//       password: e.target.password.value,
+//     };
+
+//     try {
+//       // Use the correct API endpoint URL       
+//       let res = await axios.post(`${process.env.REACT_APP_API_URL}user/signin`, data);
+//       if (res.status === 200) {
+//         toast.success(res.data.message);
+//         sessionStorage.setItem('token', res.data.token);
+//         navigate('/home');
+//       }
+//     } catch (error) {
+//       // Log the error to the console for debugging
+//       console.error(error);
+
+//       // Display the error message
+//       toast.error(error.response?.data.error || error.message);
+//     }
+//   };
+
+//   return (
+//     <div className="login-page">
+//       <body>
+//         <section>
+//           <form onSubmit={handleSignin}>
+//             <div className="form-box">
+//               <div className="form-value">
+//                 <h2>Login</h2>
+//                 <div className="input-box">
+//                   <span className="icon">
+//                     <i className="fa-regular fa-envelope"></i>
+//                   </span>
+//                   <input type="email" name="email" />
+//                   <label>Email</label>
+//                 </div>
+//                 <div className="input-box">
+//                   <span className="icon">
+//                     <i className="fa-solid fa-lock"></i>
+//                   </span>
+//                   <input type="password" name="password" />
+//                   <label>Password</label>
+//                 </div>
+//                 <button type="submit" className="login-button">
+//                   LOGIN
+//                 </button>
+//                 <div className="login-register">
+//                   <p>
+//                     Don't have an account <a href="/SignUp">SignUp</a>
+//                   </p>
+//                 </div>
+//               </div>
+//             </div>
+//           </form>
+//         </section>
+//       </body>
+//     </div>
+//   );
+// }
+
+// export default LogIn;

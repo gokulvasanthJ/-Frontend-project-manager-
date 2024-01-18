@@ -11,6 +11,7 @@ import { useState, useEffect } from "react";
 import { RiseLoader} from "react-spinners";
 
 function App() {
+  console.log(process.env.REACT_APP_API_URL)
   
   const [loading, setLoading] = useState(false);
 
