@@ -10,6 +10,8 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { RiseLoader} from "react-spinners";
 import PrivateRoutes from "./Pri-Route/PrivateRoutes";
+import ProjectDetails from "./Components/ProjectDetails";
+import { ProjectProvider } from "./Context/ProjectContext";
 
 function App() {
   console.log(process.env.REACT_APP_API_URL)
@@ -43,19 +45,28 @@ function App() {
               <NavBar />
             </div>
             <div>
+            <ProjectProvider>
               <Routes>
                 <Route element={<PrivateRoutes />}>
                 <Route path="/home" element={<Home />} />
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/addproject" element={<AddProject />} />
                 <Route path="/editprojects" element={<EditProjects />} />
+                <Route path="/projectdetails" element={<ProjectDetails />} />
+
                 <Route path="*" element= {<Navigate to="login"/>} />
+                
+                
+                
 
                 </Route>
                 <Route path="/login" element={<LogIn />} />
                 <Route path="/signup" element={<SignUp />} />
               </Routes>
+              </ProjectProvider>
+             
             </div>
+             
           </BrowserRouter>
         </>
       )}
