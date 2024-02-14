@@ -440,7 +440,7 @@ overflow: auto;
 .dashboard-page{
   background-color:rgb(164, 225, 234);
 width:100%;
-height:auto;
+min-height: 100vh;
 }
 /* .dashboard-container{
 } */
@@ -579,13 +579,15 @@ border-radius: 5px;
 
 .project-detailspage{
   width: 100%;
-  height: auto;
+  min-height: 100vh;
   background-color: rgb(133, 238, 238);
   display:flex;
-  justify-content:space-between;
+  justify-content:space-between;   
+  }
+  
   
 
-}
+
 
 .pd-23{
     width: 50%;
