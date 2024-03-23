@@ -1053,7 +1053,7 @@ function Dashboard() {
     };
 
     apiData.forEach((project) => {
-      // Make sure project.status is defined before using toLowerCase
+      // project.status is defined before using toLowerCase
       if (project.status && typeof project.status === 'string') {
         switch (project.status.toLowerCase()) {
           case 'done':
@@ -1199,7 +1199,7 @@ function Dashboard() {
                             ? 100
                             : project.status === "in progress"
                             ? 50
-                            : 101
+                            : 101//this for backlog 101 is accupies full of the bar so i am  use this.
                         }
                         variant={getProgressBarVariant(project.status)}
                         label={`Progress: ${project.status}`}

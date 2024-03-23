@@ -1,6 +1,5 @@
-// ProjectChart.js
 import React, { useEffect } from 'react';
-import Chart from 'chart.js/auto'; // Import Chart library or any other chart library you are using
+import Chart from 'chart.js/auto'; 
 // import { useNavigate } from 'react-router-dom';
 
 const ProjectChart = ({ data }) => {
