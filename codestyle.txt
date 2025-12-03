@@ -1,0 +1,254 @@
+import React from 'react'
+import subscription from '../assets/Homepageimg/Workflowimg/crown.png'
+import delivery from '../assets/Homepageimg/Workflowimg/food-delivery.png'
+import doctor from '../assets/Homepageimg/Workflowimg/clinic.png'
+import tracking from '../assets/Homepageimg/Workflowimg/roadmap.png'
+
+const Healthyflow = () => {
+  return<>
+  <div className="flex justify-center items-center min-h-screen bg-#ffff-900">
+<div className="bg-[#0f172a] rounded-lg p-10 text-white flex flex-col md:flex-row justify-center items-center  md:items-start max-w-5xl  mx-auto justify-between gap-8">
+  
+  <div className="md:w-1/2">
+    <h2 className="text-4xl font-bold leading-tight mb-4">
+      Why Choose Us Your Health & Wellness Journey 
+    </h2>
+    <p className="text-gray-400 mb-6">
+      We are a healthy food meal preparation and subscription-based app offering quick delivery, flexible order cancellation, and most importantly, nutritious, doctor-recommended diet plans. Enjoy personalized consulting, expert tips, and diet charts to support your wellness journey.
+    </p>
+    <div className="flex gap-4">
+      <button className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold px-5 py-2 rounded-md">
+        Explore
+      </button>
+      <a href="#" className="text-white font-semibold flex items-center gap-1">
+        Contact us →
+      </a>
+    </div>
+  </div>
+
+  <div className="md:w-1/2 grid grid-cols-2 gap-8 flex justify-center items-center">
+    <div className="flex flex-col w-30  h-30 justify-center items-center gap-3">
+      <img src={subscription} alt="Tuple" className="w-15 h-15 "/>
+      <span className="font-semibold ">Subscription</span>
+    </div>
+    <div className="flex flex-col w-30  h-30 items-center gap-3">
+      <img src={doctor} alt="Reform" className="w-15 h-15"/>
+      <span className="font-semibold">Doctor Consult</span>
+    </div>
+    <div className="flex flex-col  w-30  h-30 items-center gap-3">
+      <img src={delivery} alt="SavvyCal" className="w-15 h-15"/>
+      <span className="font-semibold">Quick Delivery</span>
+    </div>
+    <div className="flex flex-col w-30  h-30 items-center gap-3">
+      <img src={tracking} alt="Laravel" className="w-15 h-15"/>
+      <span className="font-semibold">Track & Support</span>
+    </div>
+    
+  </div>
+
+</div>
+</div>
+  
+  </>
+}
+
+export default Healthyflow
+
+------------              Grandma’s recipes revived
+
+
+import React from "react";
+import Lowcarb from "../assets/Homepageimg/Menuimg/lowcarb.jpg";
+import Vegan from "../assets/Homepageimg/Menuimg/veganmeal.jpg";
+import Vegitarian from "../assets/Homepageimg/Menuimg/keto.jpg";
+import Keto from "../assets/Homepageimg/Menuimg/vegitarian.jpg";
+
+const Menu = () => {
+  return (
+    <>
+      <section className="w-full bg-[#FCE6] py-10 sm:py-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
+          {/* Left Side - Text */}
+          <div className="w-full">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#9352ff] mb-6">
+              Grandma’s recipes revived
+            </h2>
+
+            <div className="space-y-6 text-gray-800 text-sm sm:text-base">
+              <div>
+                <h3 className="font-bold text-lg">FOOD</h3>
+                <p>
+                  We provide breakfast, lunch, snacks, and dinner — all healthy
+                  alternatives to your favorite dishes to make eating enjoyable.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-bold text-lg">MEAL DELIVERY</h3>
+                <p>
+                  Freshly prepared meals for high protein, vegan, low carb, and
+                  balanced diets — delivered right to your door.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-bold text-lg">FLEXIBILITY</h3>
+                <p>
+                  Pause, customize, or cancel your orders anytime. Your meal
+                  plan fits your lifestyle — not the other way around.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-8 flex flex-col sm:flex-row items-center gap-4">
+              <a
+                href="#"
+                className="focus:outline-none focus:ring-0 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold px-5 py-2 rounded-md"
+              >
+                Get Started
+              </a>
+              <a href="#" className="text-black font-medium">
+                Start Your Meals →
+              </a>
+            </div>
+          </div>
+
+          {/* Right Side - Image Stack .............*/}
+          <div className="relative w-full h-[200px] sm:h-[300px] md:h-[350px] flex gap-1 sm:gap-3 group">
+            <div className="card flex-1 min-w-[70px] transition-all duration-500 ease group-hover:flex-[0.8] hover:flex-[5]">
+              <img
+                src={Lowcarb}
+                alt="Low Carb Meals"
+                className="w-full h-full object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+              />
+            </div>
+
+            <div className="card flex-1 min-w-[70px] transition-all duration-500 ease group-hover:flex-[0.8] hover:flex-[5]">
+              <img
+                src={Vegan}
+                alt="Vegan Meals"
+                className="w-full h-full object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+              />
+            </div>
+
+            <div className="card flex-1 min-w-[70px] transition-all duration-500 ease group-hover:flex-[0.8] hover:flex-[5]">
+              <img
+                src={Keto}
+                alt="Balanced Meals"
+                className="w-full h-full object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+              />
+            </div>
+
+            <div className="card flex-1 min-w-[70px] transition-all duration-500 ease group-hover:flex-[0.8] hover:flex-[5]">
+              <img
+                src={Vegitarian}
+                alt="Balanced Meals"
+                className="w-full h-full object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default Menu;
+
+
+-------------------------subscription page
+
+import React, { useEffect, useState } from 'react'
+import image from '../assets/Homepageimg/landingpageimg/top-view-food-frame-with-copy-space.jpg'
+
+function LandingPage() {
+  const fullText = 'Calorie counted for you'
+  const [displayedText, setDisplayedText] = useState('')
+  const [index, setIndex] = useState(0)
+  const [deleting, setDeleting] = useState(false)
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      if (!deleting) {
+        if (index < fullText.length) {
+          setDisplayedText(fullText.slice(0, index + 1))
+          setIndex(index + 1)
+        } else {
+          setDeleting(true)
+        }
+      } else {
+        if (index > 0) {
+          setDisplayedText(fullText.slice(0, index - 1))
+          setIndex(index - 1)
+        } else {
+          setDeleting(false)
+        }
+      }
+    }, 150)
+
+    return () => clearTimeout(timeout)
+  }, [index, deleting, fullText])
+
+  return (
+    <div
+      className="
+    pt-16 
+    min-h-screen w-full 
+    bg-cover bg-center bg-no-repeat
+    sm:pt-20 md:pt-24 lg:pt-28
+    sm:min-h-[80vh] md:min-h-[90vh] lg:min-h-screen
+    px-4 sm:px-6 md:px-8
+  "
+      style={{ backgroundImage: `url(${image})` }}
+    >
+      <div className="flex flex-col items-center md:items-end justify-center h-[calc(100vh-64px)] md:pr-20 space-y-4 text-center md:text-right">
+        <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight max-w-lg">
+          Deliciousness at your fingertips
+        </h1>
+        <h2
+          className="text-amber-300 text-lg sm:text-xl md:text-2xl font-semibold drop-shadow-md border-r-4 border-white pr-1 animate-pulse inline-block w-[200px] sm:w-[240px] md:w-[280px]"
+        >
+          {displayedText}
+        </h2>
+
+        <button
+          className="
+            mt-6 sm:mt-8
+            px-6 sm:px-8 py-2 sm:py-3
+            bg-gradient-to-r from-indigo-500 to-purple-500
+            text-white
+            font-semibold
+            rounded-lg
+            shadow-lg
+            hover:from-indigo-800 hover:to-purple-800
+            focus:outline-none focus:ring-4 focus:ring-green-300
+            transition
+            duration-300
+            ease-in-out
+            text-sm sm:text-base md:text-lg
+          "
+        >
+          Launch your meal
+        </button>
+     
+        {/* Balanced meals section */}
+        <div className="mt-10 sm:mt-[80px] md:mt-[100px] flex flex-col sm:flex-row gap-3 items-center sm:items-end justify-center sm:justify-end flex-wrap">
+          <div className="flex flex-col items-center border border-gray-300 rounded-[5px] p-4 sm:p-6 w-56 sm:w-64 shadow-md bg-fuchsia-200">
+            <h3 className="text-lg sm:text-xl font-bold mb-2 text-gray-800">Balanced Meals</h3>
+            <h6 className="text-gray-600 text-center text-sm sm:text-base">Eat healthy and tasty</h6>
+          </div>
+          <div className="flex flex-col items-center border border-gray-300 rounded-[5px] p-4 sm:p-6 w-48 sm:w-54 shadow-md bg-fuchsia-200">
+            <h3 className="text-lg sm:text-xl font-bold mb-2 text-gray-800">High Protein</h3>
+            <h6 className="text-gray-600 text-center text-sm sm:text-base">To gain weight</h6>
+          </div>
+          <div className="flex flex-col items-center border border-gray-300 rounded-[5px] p-4 sm:p-6 w-56 sm:w-64 shadow-md bg-fuchsia-200">
+            <h3 className="text-lg sm:text-xl font-bold mb-2 text-gray-800">Keto Meals</h3>
+            <h6 className="text-gray-600 text-center text-sm sm:text-base">To lose weight</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default LandingPage

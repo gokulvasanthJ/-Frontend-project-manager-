@@ -54,11 +54,7 @@ function App() {
                 <Route path="/editprojects" element={<EditProjects />} />
                 <Route path="/projectdetails" element={<ProjectDetails />} />
 
-                <Route path="*" element= {<Navigate to="login"/>} />
-                
-                
-                
-
+                <Route path="*" element= {<Navigate to="login"/>} />          
                 </Route>
                 <Route path="/login" element={<LogIn />} />
                 <Route path="/signup" element={<SignUp />} />
